@@ -1,4 +1,105 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/*Also, controls the title "Modern Luxury Travel"*/
+.container {
+  margin: 0;
+  width: 100%;
+}
+
+div {
+  background-color: #dadada;
+  float: left;
+  margin: 0%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 5px;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase; /* All characters will be uppercase */
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+
+}
+
+.preview.baku{
+  width: 0 auto;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position:relative;
+}
+
+.preview.london{
+  width: 0 auto;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position:relative;
+}
+
+
+.preview.madrid{
+  width: 0 auto;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position:relative;
+}
+
+.preview.rome{
+  width: 0 auto;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position:relative;
+}
+
+/*controls text on image*/
+.preview h3 {
+  position:absolute;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+
+/* code added to create four-column design */
+@media screen and (min-width: 991px) {
+   div {
+    margin: 1%;
+    width: 40%;
+  }
+}
+
+/* code added to create two-column design */
+@media screen and (min-width: 575px) {
+   div {
+    margin: 1%;
+    width: 40%;
+  }
 }
