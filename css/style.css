@@ -7,106 +7,88 @@ body {
   font-family: sans-serif;
   font-size: 16px;
 
-
 }
 
 .container {
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
-
 }
 
-div {
-  background-color: #dadada;
-  float: left;
-  margin: 0%;
-  width: 100%;
 
-}
-
-h1 {
-  font-size: 1.5em;
-  font-weight: 300;
-  margin: 5px;
-  padding: 16px;
+.container > h1 {
+  margin: 30px 0;
+  letter-spacing: .2em;
   text-align: center;
   text-transform: uppercase; /* All characters will be uppercase */
 }
 
-h3 {
-  font-size: 1.2em;
-  font-weight: 400;
-  margin: 0;
-
+.preview {
+  height: 300px;
+  margin: 2em 0;
+  width: 100%;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-
-}
-
-.preview.baku {
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  position:relative;
-  width: 0 auto;
-}
-
-.preview.london  {
-  width: 0 auto;
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  position:relative;
-}
-
-.preview.madrid {
-  width: 0 auto;
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  position:relative;
-}
-
-.preview.rome {
-  width: 0 auto;
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  position:relative;
-}
 
 .preview h3 {
-  width: 50%;
+  font-size: 1.2em;
+  padding: 10%;
   margin: 0;
-  padding-left: 30px;
-  padding-top: 20px;
-  position:absolute;
+  text-align: left;
+}
 
+.baku {
+  background-image: url(/images/baku.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.london {
+  background-image: url(/images/london.png);
+  background-size: cover;
+  background-position: right;
+}
+
+.rome {
+  background-image: url(/images/rome.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.madrid {
+  background-image: url(/images/madrid.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+
+
+
+/* code added to create two-column design */
+@media screen and (min-width: 600px) {
+  .container {
+  margin: 0 auto;
+  width: 80%;
+  }
+
+  .preview {
+   float: right;
+   height: 200px;
+   margin: 1% 1%;
+   padding: 10px;
+   width: 48%;
 }
 
 /* code added to create four-column design */
-@media screen and (min-width: 991px) {
-   div {
-    margin: 1%;
-    width:30%;
+@media screen and (min-width: 900px) {
+  .container {
+    width: 70%;
   }
-}
 
-/* code added to create two-column design */
-@media screen and (min-width: 575px) {
-   div {
-    margin: 1%;
-    width: 25%;
-  }
+  .preview {
+   background-size: cover;
+   float: left;
+   height: 200px;
+   margin: 2em 1%;
+   padding: 10px;
+   width:23%;
 }
