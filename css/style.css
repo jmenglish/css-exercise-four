@@ -37,25 +37,25 @@ body {
 }
 
 .baku {
-  background-image: url(/images/baku.jpg);
+  background-image: url(../images/baku.jpg);
   background-size: cover;
   background-position: left;
 }
 
 .london {
-  background-image: url(/images/london.png);
+  background-image: url(../images/london.png);
   background-size: cover;
   background-position: right;
 }
 
 .rome {
-  background-image: url(/images/rome.jpg);
+  background-image: url(../images/rome.jpg);
   background-size: cover;
   background-position: left;
 }
 
 .madrid {
-  background-image: url(/images/madrid.jpg);
+  background-image: url(../images/madrid.jpg);
   background-size: cover;
   background-position: left;
 }
